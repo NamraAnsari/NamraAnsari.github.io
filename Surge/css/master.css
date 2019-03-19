@@ -487,9 +487,14 @@ p {
     } */
 
     .navigation-links ul {
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
+        /* margin-left: auto;
+        margin-right: auto; */
+        width: 40%;  
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 80px;
+
     }
 
     .navigation-links li {
