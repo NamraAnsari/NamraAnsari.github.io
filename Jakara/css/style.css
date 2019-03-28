@@ -47,7 +47,7 @@ body{
     max-width: 100px;
 }
 .nav-container{
-    max-width: 1097.5px;
+    width: max-content;
 }
 /* .menu-container {
     
@@ -89,6 +89,7 @@ body{
 }
 .dropdown{
     position: relative;
+    cursor: pointer;
 }
 /* .link-dropdown 						{ display: none; position: absolute; top: 0; left: 0; z-index: 1000; width: 100%; box-sizing: border-box; }
 .link-dropdown li 					{ font-weight: normal; background: #f6f6f6;; border-bottom: 1px solid #ccc; }
