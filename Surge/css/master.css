@@ -95,6 +95,7 @@ p {
 .banner-image img {
     min-width: 100vw;
     height: 100vh;
+    filter: grayscale(100%);
 }
 
 .banner-description {
