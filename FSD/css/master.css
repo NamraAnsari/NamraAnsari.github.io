@@ -1,36 +1,36 @@
-html{
+html {
     font-family: 'Montserrat', 'Lato', sans-serif;
     font-size: 14px;
     letter-spacing: 1;
     line-height: 1.5;
 }
 
-*{
+* {
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
 
-body{
+body {
     width: 100%;
     position: absolute;
 }
 
-.site-wrapper{
+.site-wrapper {
     overflow-x: hidden;
 }
 
-.container{
+.container {
     margin: 0 auto;
     padding: 0 60px;
 }
 
-.group:before,
-.group:after {
+.group::before,
+.group::after {
     content: "";
     display: table;
 }
 
-.group:after {
+.group::after {
     clear: both;
 }
 
@@ -38,8 +38,8 @@ body{
     zoom: 1;
 }
 
-.home{
-    background-image: url(../images/banner.jpg), linear-gradient(to right, rgba(0,0,0, 0.6), rgba(0, 0, 0, 0.6));
+.home {
+    background-image: url(../images/banner.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -48,18 +48,18 @@ body{
     /* position: relative; */
 }
 
-.header-wrapper{
+.header-wrapper {
     width: 100%;
     height: auto;
     padding: 25px 0 0 0;
 }
 
-.logo-container{
+.logo-container {
     width: 45%;
     float: left;
 }
 
-.logo-container img{
+.logo-container img {
     max-width: 65px;
     height: 65px;
     /* z-index: 2; */
@@ -67,22 +67,22 @@ body{
     /* background-clip: content-box;  */
 }
 
-.navigation-container{
+.navigation-container {
     width: 55%;
     float: left;
     margin-bottom: 0;
 }
 
-.navigation-container ul{
+.navigation-container ul {
     width: 100%;
 }
 
-.navigation-container li{
+.navigation-container li {
     list-style: none;
     float: left;
 }
 
-.navigation-container a{
+.navigation-container a {
     color: #FFF;
     margin: 20px 0 0 0;
     padding: 0 20px 0 20px;
@@ -94,46 +94,46 @@ body{
     cursor: pointer;
 }
 
-.navigation-container a:hover{
+.navigation-container a:hover {
     color: orange;
 }
 
-.description{
+.description {
     width: 100%;
     margin: 10% 5% 0 5%;
 }
 
-.main-description{
+.main-description {
     width: 50%;
     float: left;
     letter-spacing: 1.5;
 }
 
-.main-description h1{
+.main-description h1 {
     /* font-weight: 900; */
     font-size: 270%;
     letter-spacing: 2.5;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 
-.main-description p{
+.main-description p {
     font-weight: 300;
     /* letter-spacing: 2; */
     margin: 2% 15% 0 0;
     text-align: justify;
 }
 
-.description-footer{
+.description-footer {
     width: 100%;
     margin: 10% 5% 0 5%;
 }
 
-.apply-btn{
+.apply-btn {
     width: 40%;
     float: left;
 }
 
-.apply-btn button{
+.apply-btn button {
     padding: 12px 25px;
     border-radius: 5px;
     color: #FFF;
@@ -147,13 +147,13 @@ body{
     font-family: 'Montserrat', 'Lato', sans-serif;
 }
 
-.side-description{
+.side-description {
     width: 60%;
     float: left;
     letter-spacing: 1.5;
 }
 
-.section{
+.section {
     width: 100%;
     /* height: 100vh; */
     /* line-height: 1.2; */
@@ -162,7 +162,7 @@ body{
     margin: 5% 0 0 0;
 }
 
-.links-container{
+.links-container {
     width: 15%;
     float: left;
     margin: 0 5% 0 0;
@@ -171,7 +171,7 @@ body{
     top: 5%; */
 }
 
-.links-container ul{
+.links-container ul {
     width: 100%;
     background-color: #000;
     border-radius: 15px;
@@ -179,11 +179,11 @@ body{
     padding: 10px 0;
 }
 
-.links-container li{
+.links-container li {
     list-style: none;
 }
 
-.links-container a{
+.links-container a {
     width: 80%;
     margin: 10% 0 10% 10%;
     display: block;
@@ -195,68 +195,68 @@ body{
     font-family: 'Montserrat', 'Lato', sans-serif;
 }
 
-.links-container a:hover{
+.links-container a:hover {
     font-weight: 300;
     box-sizing: border-box;
     border: 2px solid #FFF;
 }
 
-.section-content{
+.section-content {
     width: 80%;
     float: left;
 }
 
-.main-content{
+.main-content {
     margin: 5% 0 0 0;
 }
 
-.section-title{
+.section-title {
     margin: 0 0 2% 0;
     font-weight: 700;
 }
 
-.section-heading h1{
+.section-heading h1 {
     margin: 0 0 2% 0;
 }
 
-.features{
+.features {
     /* width: 100%; */
     margin: 2% 0 0 0;
     margin-right: -5%;
 }
 
-.feature-container{
+.feature-container {
     width: 45%;
     float: left;
     height: 150px;
     padding-right: 5%;
 }
 
-.feature-img{
+.feature-img {
     width: 7%;
     float: left;
     margin-right: 3%;
 }
 
-.feature-img img{
+.feature-img img {
     max-width: 100%;
 }
 
-.feature-description{
-    width: 90%;
+.feature-description {
+    width: 80%;
     float: left;
 }
 
-.feature-description h4{
+.feature-description h4 {
     margin: 0 0 2% 0;
 }
 
-.curriculum-header{
+.curriculum-header {
     width: 25%;
     margin: 5% 37.5% 0 37.5%;
 }
 
-.curriculum-header h2{
+.curriculum-header h2 {
     text-align: center;
     display: block;
     padding: 5% 12.5%;
@@ -265,32 +265,67 @@ body{
     border: 2px solid #000;
 }
 
-.modules{
+.modules {
     width: 75%;
     float: left;
     margin: 3% 5% 0 0;
     text-align: justify;
 }
 
-.modules h5{
+.modules h5 {
     width: 10%;
     float: left;
     margin: 0 2% 0 0;
 }
 
-.modules p{
+.modules p {
     width: 88%;
     float: left;
 }
 
-.modules-img{
+.modules-img {
     width: 20%;
     float: left;
     margin: 3% 0 0 0;
 }
 
-.modules-img img{
+.modules-img img {
     max-width: 50%;
     height: 70px;
 
+}
+
+.base-img
+{
+    width: 100%;
+}
+.base-img img {
+    max-width: 100vw;
+    height: auto;
+    display:block;
+    margin:auto;
+
+}
+
+.admission-process{
+    text-align: center;
+}
+.admission-process p{
+    display:inline-block;
+    margin:auto;
+    width: 50%;
+    font-weight: 700;
+}
+.apply pre,button{
+    display: inline-block;
+}
+.button{
+    background-color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border: solid rgb(202, 202, 202);
+    border-width: thin;
+    border-radius: 5px;
+    cursor: pointer;
 }
