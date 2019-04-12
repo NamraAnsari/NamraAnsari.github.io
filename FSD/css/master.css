@@ -98,6 +98,22 @@ body {
     color: orange;
 }
 
+.menu-btn{
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.menu-btn span{
+    display: block;
+    margin: 0 0 5px 0;
+    width: 30px;
+    height: 5px;
+    background-color: #FFF;
+}
+
 .description {
     width: 100%;
     margin: 10% 5% 0 5%;
@@ -110,7 +126,6 @@ body {
 }
 
 .main-description h1 {
-    /* font-weight: 900; */
     font-size: 270%;
     letter-spacing: 2.5;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
@@ -155,10 +170,6 @@ body {
 
 .section {
     width: 100%;
-    /* height: 100vh; */
-    /* line-height: 1.2; */
-    /* font-size: 12px; */
-    /* position: relative; */
     margin: 5% 0 0 0;
 }
 
@@ -166,9 +177,6 @@ body {
     width: 15%;
     float: left;
     margin: 0 5% 0 0;
-    /* position: sticky;
-    position: -webkit-sticky;
-    top: 5%; */
 }
 
 .links-container ul {
@@ -316,8 +324,12 @@ body {
     width: 50%;
     font-weight: 700;
 }
+.tuition-fees{
+    margin-left: 20%;
+}
 .apply pre,button{
     display: inline-block;
+    /* margin-bottom: 5%; */
 }
 .button{
     background-color: rgb(255, 255, 255);
@@ -328,4 +340,142 @@ body {
     border-width: thin;
     border-radius: 5px;
     cursor: pointer;
+}
+@media screen and (max-width: 1024px){
+    html{
+        font-size: 12px;
+    }
+
+    .logo-container img {
+        max-width: 40px;
+        height: 40px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .modules h5{
+        width: 15%;
+    }
+    .modules p{
+        width: 70%;
+    }
+    .modules-img {
+        width: 20%;
+        float: left;
+        margin: 3% 0 0 0;
+    }
+    .modules-img img{
+        max-width: 100%;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 768px){
+
+    .container{
+        padding: 0 40px;
+        margin: 0;
+    }
+    
+    .links-container ul{
+        display: none;
+    }
+
+    .section-content{
+        width: 100%;
+        float: none;
+    }
+}
+@media screen and (max-width: 425px){
+
+    .container{
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .home{
+        height: auto;
+    }
+
+    .main-description {
+        width: 100%;
+        float: none;
+        letter-spacing: 1.5;
+        /* text-align: center; */
+    }
+
+    .main-description h1 {
+        font-size: 150%;
+        letter-spacing: 1;
+        /* text-align: center; */
+    }
+
+    .main-description p {
+        font-weight: 200;
+        letter-spacing: .7;
+        /* margin: 2% 15% 0 0; */
+        /* text-align: center;  */
+    }
+
+    .description-footer {
+        width: 100%;
+        padding: 0 0 7% 0;
+        margin: 7% 0 0 0;
+    }
+
+    .apply-btn {
+        width: 100%;
+        float: none;
+    }
+
+    .apply-btn button{
+        padding: 10px 12px;
+        font-size: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .side-description{
+        display: none;
+    }
+    
+    .feature-container{
+        width: 100%;
+        float: none;
+    }
+    .curriculum-header {
+        width: 80%;
+        float: none;
+        margin: 5% 10% 0 10%;
+    }
+    .curriculum-header h2{
+        padding: 2% 10%;
+    }
+    .modules{
+        width: 100%;
+        float: none;
+    }
+    .modules-img{
+        width: 100%;
+        float: none;
+    }
+    .modules-img img {
+        max-width: 100%;
+        height: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin: 0 auto; */
+    }
+    .tuition-fees{
+        margin: 0;
+    }
+    .apply pre,button, .note{
+        margin-bottom: 2%;
+    }
 }
