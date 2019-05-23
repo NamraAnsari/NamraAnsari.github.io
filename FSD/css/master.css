@@ -174,7 +174,8 @@ p{
     box-sizing: border-box;
     position: sticky;
     top: 15%;
-    bottom: -15%;
+    /* bottom: 15%; */
+    margin-bottom: 7%;
 }
 
 .links-container ul {
