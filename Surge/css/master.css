@@ -1,10 +1,10 @@
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Helvetica, Arial;
 }
 
 body {
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     padding: 0;
     margin: 0;
 }
@@ -20,7 +20,7 @@ p {
 
 .container {
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 7%;
 }
 
 .header-wrapper {
@@ -61,14 +61,14 @@ p {
     padding: 20px 15px 0 15px;
     text-decoration: none;
     box-sizing: border-box;
-    font-weight: 600;
-    font-size: 90%;
+    font-weight: 700;
+    font-size: 14px;
     color: black;
     text-align: center;
 }
 
 .navigation-links a:hover {
-    color: orange;
+    color: #ff6d00;
 }
 
 .menu-btn {
@@ -89,82 +89,153 @@ p {
 }
 
 .banner-container {
-    position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/banner.jpg);
+    /* max-width: 100%; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
 }
 
-.banner-image img {
+/* .banner-image img {
     min-width: 100vw;
     height: 100vh;
     filter: grayscale(100%);
-}
+} */
 
 .banner-description {
     width: 50%;
     float: left;
-    margin-left: 30px;
-    position: absolute;
-    top: 200px;
+    margin: 200px 0 0 30px;
+    /* position: absolute;
+    top: 200px; */
     color: #fff;
     text-shadow: 0 0 5px #000;
 }
 
-.banner-description h2 {
-    letter-spacing: 3px;
+.banner-description h1 {
+    font-size: 30px;
+    /* letter-spacing: 3px; */
     font-weight: 700px;
 }
 
 .description-footer p {
     line-height: 70px;
+    font-weight: 100;
+    font-size: 15px;
 }
 
 .section-2 {
     width: 100%;
+    padding: 5% 0 5% 0;
 }
 
-.how-it-works-container {
-    margin: 20px 0 0 0;
+/* .introduction-container {
+    padding: 70px 0 0 0;
+
+
+} */
+.introduction-container img{
+    margin: 0 auto;
+    display: block;
 }
 
-.how-it-works-header h2 {
-    color: rgb(54, 54, 54);
+.introduction{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* .introduction-header h2 {
+    color: #666666;
     text-align: center;
     font-weight: 500;
     letter-spacing: 1px;
     float: none;
-}
+} */
 
-.how-it-works-header h2 span {
+/* .introduction-header h2 span {
     border-bottom: 2px solid rgb(54, 54, 54);
-}
+} */
 
 .main-description {
-    letter-spacing: .5px;
-    width: 70%;
-    float: left;
+    /* letter-spacing: .5px; */
+    width: 60%;
+    padding: 2% 20%;
+    font-weight: 100;
+    /* float: left; */
 }
 
-.main-description h5 {
-    color: rgb(49, 49, 49);
+/* .main-description h5 {
+    color: #666666;
     font-size: 18px;
-}
+} */
 
 .main-description p {
-    color: rgb(78, 78, 78);
-    line-height: 1.5;
+    color: #666666;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 .side-description {
-    width: 25%;
-    float: left;
-    padding-top: 9%;
-    margin-left: 5%;
+    width: 60%;
+    /* float: left; */
+    padding: 0 20%;
+    
+    /* margin-left: 5%; */
     font-family: Arial;
-    font-size: 105%;
+    font-size: 48px;
+    /* margin-top: -1%; */
+}
+
+.side-description h3{
+    font-weight: 100;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    /* bottom: -5%; */
+    /* top: 1%; */
+    /* padding-bottom: 5%; */
 }
 
 .border-div {
-    margin: 5% 33.33% 0 33.33%;
-    border-bottom: 2px solid rgb(54, 54, 54);
+    padding-top: 2%;
+    margin: 0 47%;
+    border-bottom: 2px solid #000000;
+    /* display: block; */
+}
+
+.col-container{
+    margin-right: -5%;
+    margin-top: 150px;
+}
+
+.col{
+    width: 20%;
+    float: left;
+    padding-right: 5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.round{
+    width: 10px;
+    height: 10px;
+    /* padding: 2px; */
+    /* box-sizing: border-box; */
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%; 
+    display: inline-block;
+}
+
+.label{
+    text-align: center;  
+}
+
+.label p{
+    font-size: 14px;
+    font-weight: 100;
 }
 
 .section-2-footer img {
@@ -180,21 +251,25 @@ p {
 }
 
 .courses-header h2 {
-    color: #000;
+    color: #111111;
     margin-top: 0;
     text-align: center;
     padding-top: 10px;
+    margin: 0 0 5px 0;
+    letter-spacing: 1.2px;
+    /* text-transform: capitalize; */
 }
 
 .courses-border-div {
-    margin: 0 49%;
-    border-bottom: 2px solid rgb(54, 54, 54);
+    margin: 0 48.5%;
+    border-bottom: 2px solid #666666;
 }
 
-.courses-subtitle {
+.courses-subtitle h3 {
     text-align: center;
-    font-style: oblique;
-    color: rgb(78, 78, 78)
+    /* font-style: oblique; */
+    color: #666666;
+    font-weight: 300;
 }
 
 .card-container {
@@ -202,7 +277,7 @@ p {
 }
 
 .card-wrapper {
-    width: 26.33%;
+    width: 27.33%;
     float: left;
     height: 350px;
     box-sizing: border-box;
@@ -214,7 +289,7 @@ p {
 }
 
 .card-wrapper:hover {
-    box-shadow: 0 0 10px #c4c4c4;
+    box-shadow: 5px 5px 7px #c4c4c4;
 }
 
 .card-header {
@@ -222,16 +297,20 @@ p {
     height: 45%;
 }
 
+/* .card-header h2{
+    letter-spacing: 1.2px;
+} */
+
 .card-1 {
     width: 100%;
     height: 100%;
-    position: relative;
+    /* position: relative; */
     border-radius: 10px 10px 0 0;
-    background: url(../images/download.jpg);
+    background: linear-gradient(to bottom right, rgba(84, 102, 209, 0.65), rgba(84, 102, 209, 0.65)), url(../images/download.jpg);
     background-size: cover;
 }
 
-.card-1:before {
+/* .card-1:before {
     content: '';
     position: absolute;
     top: 0;
@@ -239,19 +318,19 @@ p {
     bottom: 0;
     left: 0;
     border-radius: 10px 10px 0 0;
-    background-image: linear-gradient(to bottom right, rgba(84, 102, 209, 0.65), rgba(84, 102, 209, 0.65));
-}
+    background-image: ;
+} */
 
 .card-2 {
     width: 100%;
     height: 100%;
-    position: relative;
-    background: url(../images/Blog-data.jpg);
+    /* position: relative; */
+    background: linear-gradient(to bottom right, rgba(236, 196, 122, 0.65), rgba(236, 196, 122, 0.65)), url(../images/Blog-data.jpg);
     background-size: cover;
     border-radius: 10px 10px 0 0;
 }
 
-.card-2:before {
+/* .card-2:before {
     content: '';
     position: absolute;
     top: 0;
@@ -259,19 +338,19 @@ p {
     bottom: 0;
     left: 0;
     border-radius: 10px 10px 0 0;
-    background-image: linear-gradient(to bottom right, rgba(236, 196, 122, 0.65), rgba(236, 196, 122, 0.65));
-}
+    background-image: ;
+} */
 
 .card-3 {
     width: 100%;
     height: 100%;
-    position: relative;
-    background: url(../images/android_development.jpg);
+    /* position: relative; */
+    background: linear-gradient(to bottom right, rgba(122, 236, 166, 0.65), rgba(122, 236, 166, 0.65)), url(../images/android_development.jpg);
     background-size: cover;
     border-radius: 10px 10px 0 0;
 }
 
-.card-3:before {
+/* .card-3:before {
     content: '';
     position: absolute;
     top: 0;
@@ -279,8 +358,8 @@ p {
     bottom: 0;
     left: 0;
     border-radius: 10px 10px 0 0;
-    background-image: linear-gradient(to bottom right, rgba(122, 236, 166, 0.65), rgba(122, 236, 166, 0.65));
-}
+    background-image: ;
+} */
 
 .card-title {
     width: 100%;
@@ -288,16 +367,16 @@ p {
     position: absolute;
     top: 40%;
     left: 0;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     text-shadow: 0 0 2px #000;
     text-align: center;
     text-transform: uppercase;
     box-sizing: border-box;
 }
 
-.card-wrapper:hover .card-title {
+/* .card-wrapper:hover .card-title {
     text-shadow: 2px 2px 1px #000;
-}
+} */
 
 .card-description {
     height: 55%;
@@ -309,7 +388,7 @@ p {
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    color: rgb(78, 78, 78);
+    color: #666666;
 }
 
 .learn-more {
@@ -320,26 +399,116 @@ p {
     justify-content: center;
 }
 
-.learn-more button {
-    padding: 10px 12px;
+.learn-more a{
+    padding: 15px 17px;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
     background-color: rgb(94, 185, 238);
     outline: none;
     border: none;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: .7px;
     font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.learn-more button:hover {
-    text-shadow: 1px 1px 2px #c4c4c4;
+.learn-more a:hover {
+    /* text-shadow: 1px 1px 2px #c4c4c4;
     box-shadow: 5px 5px 5px #c4c4c4;
+    box-sizing: border-box; */
+    background-color: #7a7a7a;
+}
+
+.section-4{
+    padding: 5% 0;
+}
+
+.featured-press{
+    width: 33.33%;
+    float: left;
+}
+
+.featured-press h2{
+    color: #111111;
+    margin: 0;
+    letter-spacing: 1.2px;
+}
+
+.featured-press-border{
+    border-bottom: 2px solid #666666;
+    margin: 2% 90% 0 0;
+}
+
+.featured-press-desc{
+    color: #666666;
+    line-height: 25px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.press-logos{
+    width: 66.67%;
+    float: left;
+    margin-top: 7%;
+    padding: 0 0 0 5%;
     box-sizing: border-box;
 }
 
-.section-4 {
+.logos{
+    width: 33.33%;
+    height: 250px;
+    float: left;
+    position: relative;
+    /* padding: 20px 30px; */
+    /* box-sizing: border-box; */
+    /* padding: 20px; */
+    /* border-radius: 50%; */
+    /* box-sizing: border-box; */
+}
+
+.logos img{
+    max-width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    cursor: pointer;
+}
+
+.logos img:hover
+{
+    -webkit-filter: grayscale(100%) contrast(100%);
+    filter: grayscale(100%) contrast(100%);
+}
+
+.media-overlay{
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: -25%;
+    left: -7%;
+    /* margin: 30px 0 0 0; */
+    /* margin: 20px 20px; */
+    border-radius: 100%;
+    z-index: 100;
+    transform-origin: 50% 50%;
+    transform: scale(0);
+    transition: all .25s ease-in-out;
+    /* display: none; */
+    opacity: 0;
+}
+
+.logos img:hover .media-overlay
+{
+    /* display: block; */
+    opacity: 1;
+}
+
+.section-5 {
     width: 100%;
     height: 100vh;
     background-color: rgb(36, 36, 36);
@@ -438,11 +607,18 @@ p {
     position: relative;
 }
 
+/* .quote-left{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+} */
+
 .quote-left img {
     max-width: 15%;
     float: left;
     position: absolute;
     top: 5%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .quote-right img {
@@ -450,6 +626,8 @@ p {
     float: left;
     position: absolute;
     bottom: 0;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .quote-description {
@@ -479,7 +657,7 @@ p {
 }
 
 .menu-btn span:hover {
-    color: orange;
+    color: #ff6d00;
 }
 
 @media screen and (max-width: 1024px) {
